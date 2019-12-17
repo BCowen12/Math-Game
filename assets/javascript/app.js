@@ -257,8 +257,6 @@ function start(){
 function ask(){
     qNum = Math.floor(Math.random() * (index.length));
     num = index[qNum];
-    console.log(index.length);
-    console.log(qNum);
     remove(index, num);
     $("#start").html("");
     $("#solution").html("");
