@@ -23,11 +23,11 @@
     background-color: whitesmoke;
     color: black;
     width: 95%;
+    margin: 10px;
 }
 
 button{
     width: 75%;
-    margin: 5px;
 }
 
 #title{
@@ -61,7 +61,7 @@ button{
 }
 
 #answers{
-    text-align: center;
+    text-align: left;
     position: relative;
     clear: both;
     cursor: pointer; 
