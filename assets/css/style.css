@@ -1,0 +1,76 @@
+#start{
+    position: relative;
+    text-align: center;
+    bottom: -200px;
+} 
+
+#all{
+    height: 100vh;
+}
+
+#box{
+    background-color: darkgray;
+    color: whitesmoke;
+    padding: 40px;
+    overflow: auto;
+    height: 100%;
+}
+#ask{
+    position: relative;
+    top: 90px;
+}
+
+button{
+    width: 75%;
+    margin: 5px;
+}
+
+#title{
+    top: 70px;
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    font-weight: bold;
+}
+
+#instructions{
+    top: 70px;
+    text-align: center;
+    color: black;
+}
+
+#time{
+    position: relative;
+    clear: both;
+    text-align: center;
+    font-size: 20px;
+    top: -20px;
+}
+
+#question{
+    text-align: center;
+    position: relative;
+    clear: both;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 2px 2px black;
+}
+
+#answers{
+    text-align: center;
+    position: relative;
+    clear: both;
+    cursor: pointer; 
+}
+
+#restart{
+    text-align: center;
+    bottom: -130px;
+}
+
+body{
+    background-color: black;
+}
+
+#score{
+    text-align: right;
+}

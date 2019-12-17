@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Trivia Game</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Creepster|Roboto+Slab" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/reset.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="all">
+            <div class="col-md-12" id="box">
+                <div class="row">
+                    <div class="col" id="time"></div>
+                    <div class="col"></div>
+                    <div class="col" id="score"></div>
+                </div>
+                <div class="row">
+                    <div class="col" id="title">
+                        Math Speed Test
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" id="instructions">
+                        Answer as many math questions as you can before time runs out.
+                    </div>
+                </div>
+                <span id="ask">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col" id="question"></div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col" id="start">
+                            <button type="button" class="btn btn-primary btn-lg">Start</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col" id="answers">
+                            <span id="solution"></span>
+                            <span id="q1"></span>
+                            <span id="q2"></span>
+                            <span id="q3"></span>
+                            <span id="q4"></span>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </span>
+                <div class="row">
+                    <div class="col" id="restart"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="assets/javascript/app.js"></script>
+
+
+</html>
