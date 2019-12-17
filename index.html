@@ -18,52 +18,50 @@
 
 <body>
     <div class="container">
-        <div class="row" id="all">
-            <div class="col-md-12" id="box">
+        <div class="col-md-12" id="box">
+            <div class="row">
+                <div class="col-5" id="time"></div>
+                <div class="col"></div>
+                <div class="col-4" id="score"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" id="title">
+                    <h1>Math Speed Test</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" id="instructions">
+                    Answer as many math questions as you can before time runs out.
+                </div>
+            </div>
+            <span id="ask">
                 <div class="row">
-                    <div class="col-5" id="time"></div>
                     <div class="col"></div>
-                    <div class="col-4" id="score"></div>
+                    <div class="col" id="question"></div>
+                    <div class="col"></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12" id="title">
-                        <h1>Math Speed Test</h1>
+                    <div class="col" id="start">
+                        <button type="button" class="btn btn-primary btn-lg">Start</button>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col" id="instructions">
-                        Answer as many math questions as you can before time runs out.
-                    </div>
+                    <div class="col" id="results"></div>
                 </div>
-                <span id="ask">
-                    <div class="row">
-                        <div class="col"></div>
-                        <div class="col" id="question"></div>
-                        <div class="col"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col" id="start">
-                            <button type="button" class="btn btn-primary btn-lg">Start</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col" id="results"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col"></div>
-                        <div class="col" id="answers">
-                            <span id="solution"></span>
-                            <span id="q1"></span>
-                            <span id="q2"></span>
-                            <span id="q3"></span>
-                            <span id="q4"></span>
-                        </div>
-                        <div class="col"></div>
-                    </div>
-                </span>
                 <div class="row">
-                    <div class="col" id="restart"></div>
+                    <div class="col"></div>
+                    <div class="col" id="answers">
+                        <span id="solution"></span>
+                        <span id="q1"></span>
+                        <span id="q2"></span>
+                        <span id="q3"></span>
+                        <span id="q4"></span>
+                    </div>
+                    <div class="col"></div>
                 </div>
+            </span>
+            <div class="row">
+                <div class="col" id="restart"></div>
             </div>
         </div>
 
