@@ -273,7 +273,7 @@ function ask(){
     $("#q3").html(`<button class=ans value="2">${questions[num].a3}</button>`);
     $("#q4").html(`<button class=ans value="3">${questions[num].a4}</button>`);
     
-    $("#time").html(`Time Remaining: ${time} Seconds`);
+    $("#time").html(`Time Remaining: <br>${time} Seconds`);
 
     $(".ans").on("click", choice);
 }
@@ -282,7 +282,7 @@ function ask(){
 function count(){
     if(time > 0){
         time --;
-        $("#time").html(`Time Remaining: ${time} Seconds`);
+        $("#time").html(`Time Remaining: <br>${time} Seconds`);
     } else{
         clear();
         timeout();
