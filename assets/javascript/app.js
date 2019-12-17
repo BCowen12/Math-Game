@@ -11,6 +11,8 @@ var time = 0;
 var qNum = 0;
 var timer;
 var index = [];
+var bestC = 0;
+var bestI = 0;
 
 
 //this is a list of questions, answers, and the correct answer.
@@ -244,6 +246,7 @@ var questions = [
 function start(){
     $("#restart").html("");
     $("#instructions").html("");
+    $("#results").html("");
     correct = 0;
     incorrect = 0;
     num = 0;
@@ -288,6 +291,10 @@ function count(){
 
 function timeout(){
     clearInterval(timer);
+    if(correct > localStorage.getItem("bestC")) {
+        localStorage.setItem("bestC", correct);
+        localStorage.setItem("bestI", incorrect);
+    }
     again();
 }
 
@@ -318,9 +325,13 @@ function again(){
     clear();
     clearInterval(timer);
     $("#score").html("");
-    $("#question").html(`<h2>All Done! Here's How You Did:</h2>
-    <h2>Correct: ${correct}</h2>
-    <h2>Incorrect: ${incorrect}</h2>`);
+    $("#time").html("");
+    $("#results").html(`<h4>All Done! Here's How You Did:</h4>
+    <h6>Correct: ${correct}</h6>
+    <h6>Incorrect: ${incorrect}</h6>
+    <h4 class="best">Top Score:</h4>
+    <h6 class="best">Correct: ${localStorage.getItem("bestC")}</h6>
+    <h6 class="best">Incorrect: ${localStorage.getItem("bestI")}</h6>`);
     $("#restart").html(`<button type="button" class="btn btn-primary btn-lg">Try Again?</button>`);
     $("#restart").on("click", start);
 }

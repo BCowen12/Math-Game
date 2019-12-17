@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Trivia Game</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -21,13 +21,13 @@
         <div class="row" id="all">
             <div class="col-md-12" id="box">
                 <div class="row">
-                    <div class="col" id="time"></div>
+                    <div class="col-5" id="time"></div>
                     <div class="col"></div>
-                    <div class="col" id="score"></div>
+                    <div class="col-4" id="score"></div>
                 </div>
                 <div class="row">
-                    <div class="col" id="title">
-                        Math Speed Test
+                    <div class="col-md-12" id="title">
+                        <h1>Math Speed Test</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -45,6 +45,9 @@
                         <div class="col" id="start">
                             <button type="button" class="btn btn-primary btn-lg">Start</button>
                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" id="results"></div>
                     </div>
                     <div class="row">
                         <div class="col"></div>
