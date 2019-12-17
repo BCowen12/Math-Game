@@ -247,6 +247,7 @@ function start(){
     $("#restart").html("");
     $("#instructions").html("");
     $("#results").html("");
+    window.scrollTo(0, 0);
     correct = 0;
     incorrect = 0;
     num = 0;
